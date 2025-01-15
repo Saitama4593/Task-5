@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minimal Weather App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="app-title">Weather App</h1>
+    <div class="search-bar">
+      <input type="text" id="city" placeholder="Enter city name" />
+      <button onclick="getWeather()">Search</button>
+      <button onclick="useMyLocation()">My Location</button>
+    </div>
+    <div id="weather-card" class="hidden">
+      <h2 id="location"></h2>
+      <p id="temperature"></p>
+      <p id="description"></p>
+      <p id="humidity"></p>
+      <p id="wind"></p>
+    </div>
+    <p id="error" class="error hidden"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
